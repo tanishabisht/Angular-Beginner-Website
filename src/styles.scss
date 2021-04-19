@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+.bgImg {
+    background-image: url(./assets/Images/bg.png);
+    height: 93vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.loginCard {
+    margin: auto;
+    width: 30%;
+    padding: 5% 0%;
+    text-align: center;
+    background-color: #ffffff22;
+    box-shadow: 0 8px 32px 0 #92929233;
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    h1 {
+        color: #45CAA2;
+    }
+    input {
+        background-color: #45CAA222;
+        border: 1px solid #45CAA2;
+        margin-bottom: 1rem;
+        padding: 10px;
+        border-radius: 4px;
+        width: 60%;
+        outline: none;
+    }
+    button {
+        margin-top: 1rem;
+        background-color: #45CAA2;
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 4px;
+        border: 0;
+        width: 60%;
+        &:active{
+            background-color: rgb(49, 165, 130);
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
