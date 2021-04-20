@@ -1,55 +1,49 @@
-<h1>GET</h1>
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Post Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Body</th>
-    </tr>
-    <tr *ngFor='let com of lstComments'>
-        <td>{{com.id}}</td>
-        <td>{{com.postId}}</td>
-        <td>{{com.name}}</td>
-        <td>{{com.email}}</td>
-        <td>{{com.body}}</td>
-    </tr>
-</table>
+<div class="commentBg">
 
 
-<br><br><br>
-<h1>GET With Params</h1>
-<table>
-    <tr>
-        <th>Id</th>
-        <th>User Id</th>
-        <th>Title</th>
-        <th>Body</th>
-    </tr>
-    <tr *ngFor='let post of lstPosts'>
-        <td>{{post.id}}</td>
-        <td>{{post.userId}}</td>
-        <td>{{post.title}}</td>
-        <td>{{post.body}}</td>
-    </tr>
-</table>
+    <h1>GET</h1>
+    <div class="horizontalCard" *ngFor='let com of lstComments'>
+        <h3>{{com.name}}</h3>
+        <p>{{com.body}}</p>
+        <div class="bottomSection">
+            <div>ID : {{com.id}}</div>
+            <div>POST ID : {{com.postId}}</div>
+            <div>EMAIL : {{com.email}}</div>
+        </div>
+    </div>
 
 
-<br><br><br>
-<h1>POST</h1>
-<ul>
-    <li>{{returnedPostedPost.id}}</li>
-    <li>{{returnedPostedPost.userId}}</li>
-    <li>{{returnedPostedPost.title}}</li>
-    <li>{{returnedPostedPost.body}}</li>
-</ul>
+    <h1>GET With Params</h1>
+    <div class="horizontalCard" *ngFor='let post of lstPosts'>
+        <h3>{{post.title}}</h3>
+        <p>{{post.body}}</p>
+        <div class="bottomSection">
+            <div>ID : {{post.id}}</div>
+            <div>USER ID : {{post.userId}}</div>
+        </div>
+    </div>
 
 
-<br><br><br>
-<h1>PUT</h1>
-<ul>
-    <li>{{returnedPutPost.id}}</li>
-    <li>{{returnedPutPost.userId}}</li>
-    <li>{{returnedPutPost.title}}</li>
-    <li>{{returnedPutPost.body}}</li>
-</ul>
+    <h1>POST</h1>
+    <div class="horizontalCard">
+        <h3>{{returnedPostedPost.title}}</h3>
+        <p>{{returnedPostedPost.body}}</p>
+        <div class="bottomSection">
+            <div>ID : {{returnedPostedPost.id}}</div>
+            <div>USER ID : {{returnedPostedPost.userId}}</div>
+        </div>
+    </div>
+
+
+    <h1>PUT</h1>
+    <div class="horizontalCard">
+        <h3>{{returnedPutPost.title}}</h3>
+        <p>{{returnedPutPost.body}}</p>
+        <div class="bottomSection">
+            <div>ID : {{returnedPutPost.id}}</div>
+            <div>USER ID : {{returnedPutPost.userId}}</div>
+        </div>
+    </div>
+
+
+</div>

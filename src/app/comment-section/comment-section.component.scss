@@ -1,0 +1,33 @@
+.commentBg {
+    background-image: url(../../assets/Images/bg.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        color: #45CAA2;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.horizontalCard {
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff22;
+    box-shadow: 0 8px 32px 0 #92929233;
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    color: rgb(24, 95, 74);
+}
+
+.bottomSection {
+    display: flex;
+    div{
+        width: 100%;
+    }
+}
