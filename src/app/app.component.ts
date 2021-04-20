@@ -1,4 +1,6 @@
 import { Component } from '@angular/core'
+// import {freeApiService} from './Services/freeapi.service'
+// import {Comments} from './Classes/comments'
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core'
 })
 
 export class AppComponent {
-  title = 'angular-beginner-project';
+  // constructor(private _freeApiService : freeApiService){}
+  // lstComments:Comments[]
+  // ngOnInit(){
+  //   this._freeApiService.getComments().subscribe(data => this.lstComments = data)
+  // }
 }

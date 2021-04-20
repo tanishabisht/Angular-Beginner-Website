@@ -1,0 +1,55 @@
+<h1>GET</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Post Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor='let com of lstComments'>
+        <td>{{com.id}}</td>
+        <td>{{com.postId}}</td>
+        <td>{{com.name}}</td>
+        <td>{{com.email}}</td>
+        <td>{{com.body}}</td>
+    </tr>
+</table>
+
+
+<br><br><br>
+<h1>GET With Params</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>User Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor='let post of lstPosts'>
+        <td>{{post.id}}</td>
+        <td>{{post.userId}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+    </tr>
+</table>
+
+
+<br><br><br>
+<h1>POST</h1>
+<ul>
+    <li>{{returnedPostedPost.id}}</li>
+    <li>{{returnedPostedPost.userId}}</li>
+    <li>{{returnedPostedPost.title}}</li>
+    <li>{{returnedPostedPost.body}}</li>
+</ul>
+
+
+<br><br><br>
+<h1>PUT</h1>
+<ul>
+    <li>{{returnedPutPost.id}}</li>
+    <li>{{returnedPutPost.userId}}</li>
+    <li>{{returnedPutPost.title}}</li>
+    <li>{{returnedPutPost.body}}</li>
+</ul>
