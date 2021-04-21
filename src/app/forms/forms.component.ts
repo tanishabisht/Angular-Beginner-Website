@@ -32,17 +32,20 @@ export class FormsComponent implements OnInit {
 
   userProfileForm = this.fb.group({
     firstName: ['', Validators.required],
-    lastName: [''],
-    age: [''],
-    email: [''],
+    lastName: ['', Validators.required],
+    age: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
     address: this.fb.group({
-      add1: [''],
+      add1: ['', Validators.required],
       add2: [''],
-      state: [''],
-      zip: ['']
+      state: ['', Validators.required],
+      zip: ['', Validators.required]
     }),
     mobile: this.fb.array([this.fb.control('')])
   })
+
+  get firstName(){ return this.userProfileForm.get('firstName') }
+  get lastName(){ return this.userProfileForm.get('lastName') }
 
   get mobiles(){ return this.userProfileForm.get('mobile') as FormArray }
   addNewMobile(){

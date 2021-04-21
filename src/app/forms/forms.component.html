@@ -2,6 +2,9 @@
     <div class="loginCard">
         <form [formGroup]='userProfileForm' (ngSubmit)='onSubmitFormGroup()'>
             <label>First Name <input type="text" formControlName='firstName'></label>
+            <!-- <span *ngIf='firstName.invalid && (firstName.dirty || firstName.touched)'>
+                <span *ngIf='firstName.errors.required'></span>
+            </span> -->
             <label>Last Name <input type="text" formControlName='lastName'></label>
             <label>Age <input type="text" formControlName='age'></label>
             <label>Email <input type="text" formControlName='email'></label>
