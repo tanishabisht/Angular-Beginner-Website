@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { HttpClientModule } from '@angular/common/http'
 
@@ -13,9 +13,10 @@ import { LoginComponent } from './login/login.component'
 import { SignUpComponent } from './sign-up/sign-up.component'
 import { SucessComponent } from './sucess/sucess.component'
 import { CommentSectionComponent } from './comment-section/comment-section.component'
+import { FormsComponent } from './forms/forms.component'
 
 // SERVICES
-import {freeApiService} from './Services/freeapi.service'
+import {freeApiService} from './Services/freeapi.service';
 
 @NgModule({
   declarations: [
@@ -24,17 +25,20 @@ import {freeApiService} from './Services/freeapi.service'
     LoginComponent,
     SignUpComponent,
     SucessComponent,
-    CommentSectionComponent
+    CommentSectionComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'', component: LoginComponent},
       {path:'signup', component: SignUpComponent},
       {path:'sucess', component: SucessComponent},
-      {path:'comments', component: CommentSectionComponent}
+      {path:'comments', component: CommentSectionComponent},
+      {path:'forms', component: FormsComponent}
     ])
   ],
   providers: [

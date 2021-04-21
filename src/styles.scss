@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 .bgImg {
     background-image: url(./assets/Images/bg.png);
-    height: 93vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    min-height: 100vh;
+    max-height: 100%;
 }
 
 .loginCard {

@@ -1,0 +1,25 @@
+<div class="bgImg">
+    <div class="loginCard">
+        <form [formGroup]='userProfileForm' (ngSubmit)='onSubmitFormGroup()'>
+            <label>First Name <input type="text" formControlName='firstName'></label>
+            <label>Last Name <input type="text" formControlName='lastName'></label>
+            <label>Age <input type="text" formControlName='age'></label>
+            <label>Email <input type="text" formControlName='email'></label>
+            <form formGroupName='address'>
+                <label>Add1 <input type="text" formControlName='add1'></label>
+                <label>Add2 <input type="text" formControlName='add2'></label>
+                <label>State <input type="text" formControlName='state'></label>
+                <label>Zip <input type="text" formControlName='zip'></label>
+            </form>
+            <form formArrayName='mobiles'>
+                <button (click)='addNewMobile()'>Add New Mobile Number</button><br>
+                <label style='text-align:center'>Enter Mobile Number </label><br>
+                <span *ngFor='let mob of mobiles.controls;let i=index'>
+                    <input type="text" [formControlName]='i'>
+                </span>
+            </form>
+            <button (click)='updatePartially()'>Update Partially</button>
+            <button [disabled]='!userProfileForm.valid' type="submit">Submit</button>
+        </form>
+    </div>
+</div>

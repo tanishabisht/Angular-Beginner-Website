@@ -14,5 +14,7 @@
 - GET POST PUT DELETE Operations
   - [GET GET:params POST](https://www.youtube.com/watch?v=rdLJNGZvlAA)
   - [PUT PATCH DELETE](https://www.youtube.com/watch?v=sz30RXzRRzs)
-- Forms
-- Connecting with Auth API : Sign In and Sign Up page
+- [Forms](https://www.youtube.com/playlist?list=PL9Osfv2HEXE2IDfYv6ORboNc4I-5Vp7cw)
+  - Template forms
+  - Reactive Forms (used this in project)
+- IMPLEMENTING CRUD AND FORMS : Connecting with Auth API : Sign In and Sign Up page
