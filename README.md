@@ -20,6 +20,7 @@
   - Validation
 - IMPLEMENTING CRUD AND FORMS : Connecting with Auth API : Sign In and Sign Up page
   - CORS Error : [Fix](https://www.positronx.io/handle-cors-in-angular-with-proxy-configuration/#:~:text=Enable%20CORS%20with%20Proxy%20Configuration%20Settings%20in%20Angular.&text=To%20enable%20CORS%20via%20proxy,the%20deliberate%20use%20of%20SSL.)
-- Transfer of data from one component to another
+- [Component Interaction](https://www.youtube.com/watch?v=qenFRHDxU6E&list=PL4cUxeGkcC9jqhk5RvBiEwHMKSUXPyng0) : Transfer of data from parent to child component, using @Input
 - Angular lifecycle hooks
+- Angular Piping
 - [Deployed using github pages](https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4)

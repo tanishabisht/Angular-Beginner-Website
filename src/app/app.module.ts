@@ -14,10 +14,13 @@ import { SignUpComponent } from './sign-up/sign-up.component'
 import { SucessComponent } from './sucess/sucess.component'
 import { CommentSectionComponent } from './comment-section/comment-section.component'
 import { FormsComponent } from './forms/forms.component'
+import { DashboardComponent } from './dashboard/dashboard.component'
+import { CardComponent } from './Components/card/card.component'
+import { TableComponent } from './Components/table/table.component'
 
 // SERVICES
-import {freeApiService} from './Services/freeapi.service';
-import {authApiService} from './Services/authapi.service';
+import {freeApiService} from './Services/freeapi.service'
+import {authApiService} from './Services/authapi.service'
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import {authApiService} from './Services/authapi.service';
     SignUpComponent,
     SucessComponent,
     CommentSectionComponent,
-    FormsComponent
+    FormsComponent,
+    CardComponent,
+    TableComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,8 @@ import {authApiService} from './Services/authapi.service';
       {path:'signup', component: SignUpComponent},
       {path:'sucess', component: SucessComponent},
       {path:'comments', component: CommentSectionComponent},
-      {path:'forms', component: FormsComponent}
+      {path:'forms', component: FormsComponent},
+      {path:'dashboard', component: DashboardComponent}
     ])
   ],
   providers: [

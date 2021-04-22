@@ -1,0 +1,16 @@
+.dashboard_bgImg {
+    background-image: url(../../assets/Images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+.dashboard_cards {
+    display: inline-flex;
+    text-align: left;
+    margin-top: 5rem;
+}
