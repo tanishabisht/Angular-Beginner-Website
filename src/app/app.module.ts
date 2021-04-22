@@ -17,6 +17,7 @@ import { FormsComponent } from './forms/forms.component'
 
 // SERVICES
 import {freeApiService} from './Services/freeapi.service';
+import {authApiService} from './Services/authapi.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {freeApiService} from './Services/freeapi.service';
     ])
   ],
   providers: [
-    freeApiService
+    freeApiService,
+    authApiService
   ],
   bootstrap: [AppComponent]
 })

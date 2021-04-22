@@ -17,4 +17,9 @@
 - [Forms](https://www.youtube.com/playlist?list=PL9Osfv2HEXE2IDfYv6ORboNc4I-5Vp7cw)
   - Template forms
   - Reactive Forms (used this in project)
+  - Validation
 - IMPLEMENTING CRUD AND FORMS : Connecting with Auth API : Sign In and Sign Up page
+  - CORS Error : [Fix](https://www.positronx.io/handle-cors-in-angular-with-proxy-configuration/#:~:text=Enable%20CORS%20with%20Proxy%20Configuration%20Settings%20in%20Angular.&text=To%20enable%20CORS%20via%20proxy,the%20deliberate%20use%20of%20SSL.)
+- Transfer of data from one component to another
+- Angular lifecycle hooks
+- Deployed using github pages

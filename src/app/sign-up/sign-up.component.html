@@ -1,9 +1,12 @@
 <div class="bgImg">
     <div class="loginCard">
         <h1>User Register</h1><br><br>
-        <input type="text" placeholder="email id ..." /><br>
-        <input type="text" placeholder="username ..." /><br>
-        <input type="password" placeholder="password ..." /><br>
-        <button><a [routerLink]='["/"]'>Sign Up</a></button>
+        <form [formGroup]='userSignupForm' (ngSubmit)='onSubmit()'>
+            <input type="text" placeholder="first name ..." formControlName='firstName' /><br>
+            <input type="text" placeholder="last name ..." formControlName='lastName' /><br>
+            <input type="email" placeholder="email id ..." formControlName='email' /><br>
+            <input type="password" placeholder="password ..." formControlName='password' /><br>
+            <button><a [routerLink]='["/"]'>Sign Up</a></button>
+        </form>
     </div>
 </div>

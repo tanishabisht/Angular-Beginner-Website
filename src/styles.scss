@@ -49,3 +49,10 @@
         }
     }
 }
+
+
+
+input.ng-touched.ng-invalid.ng-invalid {
+    background-color: rgba(202, 69, 69, 0.233);
+    border: 1px solid rgb(202, 69, 69);
+}

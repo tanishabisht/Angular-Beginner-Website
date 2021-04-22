@@ -45,7 +45,6 @@ export class FormsComponent implements OnInit {
   })
 
   get firstName(){ return this.userProfileForm.get('firstName') }
-  get lastName(){ return this.userProfileForm.get('lastName') }
 
   get mobiles(){ return this.userProfileForm.get('mobile') as FormArray }
   addNewMobile(){
